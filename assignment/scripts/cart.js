@@ -20,6 +20,7 @@ console.log('***** Cart Functions *****');
 
 
 let basket = []
+const maxItems = 5;
 
 function addItem( item ){
  console.log( 'in addItem:');
@@ -42,6 +43,17 @@ function addItem( item ){
     return basket;  // returning the array to verify it's empty.
 }
 
+// create a function to check if the basket isfull.
+function isFull(){
+  console.log('in isFull:');
+//
+  if (maxItems >= basket.length){
+  return true;
+} else {
+  return false;
+}
+}
+
 
 // Items added into the array.
 addItem('Pineapple');
@@ -55,3 +67,4 @@ console.log('Adding apples (expect true)', addItem('apples'));
 console.log(`Basket is now ${basket}`);
 console.log('listItems:', listItems());
 console.log('in empty basket:', empty());
+console.log( 'is the basket full?', isFull());
