@@ -38,7 +38,6 @@ addItem('Pineapple');
 addItem('Mango');
 addItem('Orange');
 // Show me what's in the array.
-console.log(addItem(basket));
 
 console.log(`Basket is ${basket}`);
 console.log('Adding apples (expect true)', addItem('apples'));
